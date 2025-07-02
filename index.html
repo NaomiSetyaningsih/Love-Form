@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Love Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Love Form</h1>
+  <p id="description">This is Naomi Form</p>
+
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">
+        Enter Your Name: 
+        <input id="name" name="name" type="text" placeholder="Your full name" required />
+      </label>
+
+      <label id="email-label" for="email">
+        Enter Your Email:
+        <input id="email" name="email" type="email" placeholder="example@email.com" required />
+      </label>
+
+      <label id="number-label" for="number">
+        Enter Your Age:
+        <input id="number" name="age" type="number" min="10" max="100" placeholder="18" required />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="dropdown">
+        What do you like most about love?
+        <select id="dropdown" name="loveChoice" required>
+          <option value="">-- Please choose --</option>
+          <option value="loyalty">Loyalty</option>
+          <option value="honesty">Honesty</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <p>What kind of love do you believe in?</p>
+      <label><input type="radio" name="love-type" value="true-love" required /> True Love</label>
+      <label><input type="radio" name="love-type" value="platonic" /> Platonic</label>
+      <label><input type="radio" name="love-type" value="unrequited" /> Unrequited</label>
+    </fieldset>
+
+    <fieldset>
+      <p>What things are important in a relationship? (Select all that apply)</p>
+      <label><input type="checkbox" name="important-things" value="trust" /> Trust</label>
+      <label><input type="checkbox" name="important-things" value="respect" /> Respect</label>
+      <label><input type="checkbox" name="important-things" value="communication" /> Communication</label>
+      <label><input type="checkbox" name="important-things" value="loyalty" /> Loyalty</label>
+      <label><input type="checkbox" name="important-things" value="understanding" /> Understanding</label>
+    </fieldset>
+
+    <fieldset>
+      <label for="dream">
+        Write Your Dream:
+        <textarea id="dream" name="dream" placeholder="I want to..."></textarea>
+      </label>
+    </fieldset>
+
+    <label>
+      <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms" value="accepted" />
+      I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and conditions</a>
+    </label><br />
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
